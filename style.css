@@ -1,0 +1,45 @@
+.rainbow {
+	background: linear-gradient(
+		135deg,
+		#ff20a3 0%,
+		#ff20a3 6%,
+		#ff1b2e 10%,
+		#ffff50 20%,
+		#2787f6 30%,
+		#8e59cb 40%,
+		#ff20a3 52.5%,
+		#ff1b2e 60%,
+		#ffff50 70%,
+		#2787f6 80%,
+		#8e59cb 90%,
+		#ff20a3 94%
+	);
+	background-size: 200% 100%;
+
+	animation: slideBackgroundHorizontal 3s infinite linear;
+}
+
+@keyframes slideBackgroundHorizontal {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: 200% 0;
+	}
+}
+
+.box {
+	border: 4px solid black;
+
+	font-family: sans-serif;
+	height: 50px;
+	width: 400px;
+	display: flex;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
